@@ -102,9 +102,10 @@ html.tg-anim-init .tg-reveal.tg-in {
 }
 
 /* 6. Client Logo Marquee & Hover Micro-Interactions */
-.logos-section { direction: ltr; overflow: hidden; }
+html, body { overflow-x: clip; }
+.logos-section { direction: ltr; overflow: hidden; width: 100%; max-width: 100vw; position: relative;; }
 .logos-section:hover .logo-track { animation-play-state: paused; }
-.logo-track { will-change: transform; }
+.logo-track { display: flex; align-items: center; gap: 24px; width: max-content; will-change: transform; }
 .logo-item { transition: transform 0.3s var(--tg-ease), color 0.25s ease, opacity 0.25s ease; }
 .logo-item:hover { transform: translateY(-3px); color: var(--orange, #ff5a36); opacity: 1; }
 
