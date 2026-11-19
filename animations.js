@@ -93,7 +93,7 @@
         if (!target) return;
         e.preventDefault();
         var headerOffset = 80;
-        if (['#work', '#services', '#tools', '#about', '#contact'].indexOf(href) !== -1) { var mkt = document.getElementById('marketing-section'); var gfx = document.getElementById('graphic-designer-section'); if (mkt && mkt.hidden) { if (gfx) { gfx.classList.remove('is-active'); gfx.hidden = true; } mkt.hidden = false; mkt.classList.add('is-active'); document.querySelectorAll('.tg-role-card[data-role]').forEach(function (btn) { var isMkt = btn.getAttribute('data-role') === 'marketing'; btn.classList.toggle('is-active', isMkt); btn.setAttribute('aria-selected', isMkt ? 'true' : 'false'); }); window.dispatchEvent(new Event('scroll')); } } var startY = window.pageYOffset || root.scrollTop || 0;
+       var startY = window.pageYOffset || root.scrollTop || 0;
         var targetY = Math.max(0, target.getBoundingClientRect().top + startY - headerOffset);
         if (reduced) {
           window.scrollTo(0, targetY);
