@@ -118,7 +118,7 @@
 
     // 4. Scroll-Triggered Reveals (IntersectionObserver)
     var revealGroups = [
-      '.section-header', '.xp-row', '.service-card', '.tool-card',
+      '.section-header', '.xp-row', '.service-card',
       '.about-title', '.about-content p', '.skills li',
       '.contact-head', '.contact-wrap', '.contact-item'
     ];
